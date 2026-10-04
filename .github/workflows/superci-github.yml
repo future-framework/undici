@@ -1,5 +1,5 @@
-# nodejs/undici's .github/workflows/ci.yml: test via nodejs.yml (node-version 24, runs-on ubuntu-latest), for the Superaction scoreboard.
-name: Superaction
+# nodejs/undici's .github/workflows/ci.yml: test via nodejs.yml (node-version 24, runs-on ubuntu-latest), for the SuperCI scoreboard.
+name: SuperCI (GitHub)
 
 on:
   workflow_dispatch: {}
@@ -9,8 +9,8 @@ permissions:
 
 jobs:
   test:
-    name: test / superaction-fabric
-    runs-on: superaction-fabric
+    name: test / github
+    runs-on: ubuntu-latest
     timeout-minutes: 30
     steps:
       - name: Checkout Repository
